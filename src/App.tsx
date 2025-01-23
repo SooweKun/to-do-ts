@@ -1,4 +1,5 @@
 import { Card } from "./components/Card/card"
+import { Create } from "./components/Header/Create/create.tsx"
 import { Search } from "./components/Header/Search/search.tsx"
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
      <Card />
      <Search />
+     <Create />
     </>
   )
 }
