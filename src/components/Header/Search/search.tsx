@@ -24,7 +24,7 @@ export const Search = () => {
 
     return(
         <motion.div 
-            className="flex w-[100px] h-[33px] rounded-[30px] bg-[#B3B7D3] ml-[100px] pl-[2px] pr-[16px] items-center"
+            className="flex w-[100px] h-[33px] rounded-[30px] bg-[#B3B7D3] pl-[2px] pr-[16px] items-center"
             animate={{width: active ? "200px" : "100px"}}
         >
             <motion.div

@@ -15,7 +15,7 @@ export const Create = () => {
 
     return(
         <button 
-            className="ml-[100px] mt-[200px] flex items-center w-[120px] h-[33px] bg-[#B3B7D3] rounded-[30px] pr-[3px] pl-[19px] justify-between  text-[11px]"
+            className="flex items-center w-[120px] h-[33px] bg-[#B3B7D3] rounded-[30px] pr-[3px] pl-[19px] justify-between  text-[11px]"
             onClick={handleClick}
             >
             Create

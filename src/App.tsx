@@ -1,17 +1,15 @@
 import { Card } from "./components/Card/card"
-import { ColorPicker } from "./components/ColorPicker/colorPicker.tsx"
-import { Create } from "./components/Header/Create/create.tsx"
-import { Search } from "./components/Header/Search/search.tsx"
+import { Todo } from "./components/Todo/todo.tsx"
+import { Header } from "./components/Header/header.tsx"
 
 function App() {
 
   return (
-    <>
+    <div className="flex gap-[100px] flex-wrap h-screen">
      <Card />
-     <Search />
-     <Create />
-     <ColorPicker />
-    </>
+     <Todo />
+     <Header />
+    </div>
   )
 }
 

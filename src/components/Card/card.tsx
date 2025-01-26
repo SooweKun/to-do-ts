@@ -8,7 +8,7 @@ export const Card = () => {
     const { fill} = useColorStore();
 
     return(
-        <div className="w-[331px] h-[100px] mt-[200px] ml-[500px] flex justify-center relative">
+        <div className="w-[331px] h-[100px] flex justify-center relative">
             <div className="flex items-end w-[55px] h-[100px]">
                 <Left
                      fill={fill}
