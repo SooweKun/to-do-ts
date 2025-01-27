@@ -41,7 +41,7 @@ export const Search = () => {
                 type="text" 
                 placeholder="Search" 
                 className="w-full h-full text-[11px] pl-[10px] bg-transparent cursor-pointer outline-none border-none placeholder:text-black placeholder:text-[11px] mb-[1px]"
-                animate={{width: active ? "140px" : "45px"}}
+                animate={{width: active ? "140px" : "47px"}}
                 />
         </motion.div>
     );

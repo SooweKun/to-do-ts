@@ -1,22 +1,18 @@
 import create from "/src/assets/create.svg"
 import { motion } from "motion/react"
-import { useState } from "react";
+import { FC } from "react";
 
-export const Create = () => {
-    const [active, setActive] = useState(false)
+interface Props {
+    handleOpen: () => void
+    active: boolean
+}
 
-    const handleClick = () => {
-        setActive(!active)      
-
-        setTimeout(() => {
-            setActive(false);
-          }, 300);
-    }
-
+export const Create: FC<Props> = ({handleOpen, active}) => {
+   
     return(
         <button 
             className="flex items-center w-[120px] h-[33px] bg-[#B3B7D3] rounded-[30px] pr-[3px] pl-[19px] justify-between  text-[11px]"
-            onClick={handleClick}
+            onClick={handleOpen}
             >
             Create
             <motion.div 

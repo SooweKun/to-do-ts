@@ -15,7 +15,7 @@ export const ColorBtn: FC<Props> = ({handleClick, img, text}) => {
             <div className="w-[30px] h-[30px] rounded-[30px] bg-[#EDE9EF] flex justify-center items-center">
             <img src={img} alt="nf" className="w-[10px] h-[10px]"/>
             </div>
-            <p className="text-[9px]">{text}</p>
+            <p className="text-[10px]">{text}</p>
         </div>
     );
 }
