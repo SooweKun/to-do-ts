@@ -22,7 +22,7 @@ export const Todo: FC<Props> = ({open, setOpen, toggleSwitch, isOn, one}) => {
     const { card } = useCardStore();    
 
     const handleClick = () => {
-        setActive((prev) => !prev)        
+        setActive((prev) => !prev)  
     }
 
     return(
