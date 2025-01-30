@@ -9,11 +9,12 @@ type CardStore = {
 export type Card = {
     name: string,
     description: string
-    removeCard: (index: number) => void
 }
 
 export const useCardStore = create<CardStore>((set) => ({
-    card: [],
+    card: [
+        
+    ],
     setCard: (card: Card) => set((state) => {
         return {
             card: [...state.card, card]
@@ -21,6 +22,7 @@ export const useCardStore = create<CardStore>((set) => ({
     }),
     removeCard: (index) => set((state) => {
         const newCard = [...state.card]
+        console.log(newCard)
         newCard.splice(index, 1)
         return {card: newCard}
     })

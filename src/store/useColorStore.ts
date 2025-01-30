@@ -6,6 +6,6 @@ interface ColorStore {
   }
   
   export const useColorStore = create<ColorStore>((set) => ({
-    fill: '#000000',
+    fill: '#B3B7D3',
     setFill: (color) => set({ fill: color }),
   }));

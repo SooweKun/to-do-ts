@@ -1,8 +1,13 @@
 import search from "/src/assets/search.svg"
 import { motion } from "motion/react"
 import { useState } from "react";
+import { FC } from "react";
 
-export const Search = () => {
+interface Props {
+    sorting: (e:string) => void
+}
+
+export const Search: FC<Props> = ({sorting}) => {
     const [active, isActive] = useState(false)
     const [scale, setScale] = useState(false);
 
@@ -22,6 +27,7 @@ export const Search = () => {
           }, 300);
     }
 
+
     return(
         <motion.div 
             className="flex w-[100px] h-[33px] rounded-[30px] bg-[#B3B7D3] pl-[2px] pr-[16px] items-center"
@@ -38,6 +44,7 @@ export const Search = () => {
             <motion.input
                 onClick={handleClick} // scale/width + if input click
                 onBlur={handleInputBlur} // width - if input click
+                onChange={(e) => sorting(e.target.value)}
                 type="text" 
                 placeholder="Search" 
                 className="w-full h-full text-[11px] pl-[10px] bg-transparent cursor-pointer outline-none border-none placeholder:text-black placeholder:text-[11px] mb-[1px]"

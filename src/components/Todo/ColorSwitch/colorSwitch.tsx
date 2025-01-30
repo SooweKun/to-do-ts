@@ -1,12 +1,15 @@
 import * as motion from "motion/react-client"
 import sun from "/src/assets/sun.svg"
 import moon from "/src/assets/moon.svg"
-import { useState } from "react"
+import { FC } from "react"
 
+interface Props {
+    isOn: boolean
+    toggleSwitch: () => void
+}
 
-export const ColorSwitch = () => {
-    const [isOn, setIsOn] = useState(false)
-    const toggleSwitch = () => setIsOn(!isOn)
+export const ColorSwitch: FC<Props> = ({toggleSwitch, isOn}) => {
+
 
     return(
         <button

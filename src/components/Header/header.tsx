@@ -5,12 +5,17 @@ import { FC } from "react"
 interface Props {
     handleOpen: () => void
     active: boolean
+    sorting: (e:string) => void
 }
 
-export const Header: FC<Props> = ({handleOpen, active}) => {
+export const Header: FC<Props> = ({handleOpen, active, sorting}) => {
+
+
     return(
         <div className="w-[700px] h-[60px] flex justify-between items-center px-[50px] bg-[url(./src/assets/header-bg.svg)]">
-            <Search />
+            <Search 
+                sorting={sorting}
+            />
             <Create 
                 handleOpen={handleOpen}
                 active={active}
